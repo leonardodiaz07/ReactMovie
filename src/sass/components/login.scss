@@ -1,0 +1,202 @@
+@import "../variables/variables.scss";
+
+.loginContainer{
+    @include flex(column, center);
+    margin-top: 12rem;
+    margin-bottom:10rem;
+    background-image: url("../../assets/wallpaperCart.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 50vh;
+    .logTitle{
+        h1{
+            @include font2(2.5rem);
+            letter-spacing: .5px;
+            text-transform: uppercase;
+            color: $blue;
+            margin: 0rem;
+            text-align: center;
+        }
+    }
+    .formContainer {
+        form {
+        @include flex2(column, flex-start, flex-start);
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        label {
+            @include font2(2rem);
+            width: 25vw;
+            letter-spacing: .5px;
+            text-transform: uppercase;
+            color: $blue;
+            background-color: $yellow;
+            padding: 1rem;
+            margin: .5rem;
+        }
+        input {
+            width: 10vw;
+            border: none;
+            padding: 1rem;
+            margin-left: 1rem;
+            background-color: $yellow;
+        }
+        input:focus {
+            outline: 0rem;
+            padding: 1rem;
+            margin-left: 1rem;
+            background-color: $lightyellow;
+        }
+        input:focus {
+            text-transform: uppercase;
+            color: $blue;
+            background-color: $lightyellow;
+        }
+        input#name, input#email, input#number {
+            text-transform: uppercase;
+            color: $blue;
+            background-color: $lightyellow;
+        }
+        button {
+            @include button(1.8rem, $yellow, $blue, .5rem 2rem);
+            text-decoration: none;
+            display: block;
+            margin: auto;
+            margin-top: 2rem;
+                &:hover {
+                    color: $yellow;
+                    background-color: $darkblue;
+                }
+                &:active {
+                    color: $yellow;
+                    background-color: $darkblue;
+                    box-shadow: rgba(13, 41, 116, 0.815) 3px 3px 6px 0px inset, rgba(6, 31, 112, 0.301) -3px -3px 6px 1px inset;
+                }
+            }
+        }
+    }
+}
+
+/* EXTRA SMALL */
+
+@media only screen and (max-width: 320px) {
+    .loginContainer{
+        margin-top: 1rem;
+        margin-bottom:0rem;
+        background-image: none;
+        .logTitle{
+            h1{
+                @include font2(2rem);
+                letter-spacing: .5px;
+            }
+        }
+        .formContainer {
+            form {
+            label {
+                @include font2(1.5rem);
+                width: 70vw;
+            }
+            input {
+                width: 30vw;
+                }
+            }
+        }
+    } 
+}
+
+/* SMALL */
+
+@media only screen and (min-width: 321px) and (max-width: 500px) {
+    .loginContainer{
+        margin-top: 3rem;
+        margin-bottom:0rem;
+        background-image: none;
+        .logTitle{
+            h1{
+                @include font2(2.3rem);
+                letter-spacing: .5px;
+            }
+        }
+        .formContainer {
+            form {
+            label {
+                @include font2(1.5rem);
+                width: 70vw;
+            }
+            input {
+                width: 30vw;
+                }
+            }
+        }
+    }     
+}
+
+/* MEDIUM */
+
+@media only screen and (min-width: 501px) and (max-width: 810px) {
+    .loginContainer{
+        margin-top: 1rem;
+        margin-bottom:0rem;
+        background-image: url("../../assets/wallpaperCart.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:contain;
+        height: 50vh;
+        .logTitle{
+            h1{
+                @include font2(2.3rem);
+                letter-spacing: .5px;
+            }
+        }
+        .formContainer {
+            form {
+            label {
+                width: 50vw;
+            }
+            input {
+                width: 25vw;
+                }
+            }
+        }
+    }  
+}
+
+/* BIG */
+
+@media only screen and (min-width: 811px) and (max-width: 1000px) {
+    .loginContainer{
+        margin-top: 10rem;
+        margin-bottom:0rem;
+        height: 40vh;
+        .formContainer {
+            form {
+            label {
+                width: 50vw;
+            }
+            input {
+                width: 25vw;
+                }
+            }
+        }
+    }  
+}
+
+/* LARGE */
+
+@media only screen and (min-width: 1001px) and (max-width: 1100px) {
+    .loginContainer{
+        margin-top: 10rem;
+        margin-bottom:0rem;
+        height: 50vh;
+        .formContainer {
+            form {
+            label {
+                width: 40vw;
+            }
+            input {
+                width: 20vw;
+                }
+            }
+        }
+    } 
+}

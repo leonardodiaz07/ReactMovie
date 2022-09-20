@@ -1,0 +1,876 @@
+.findProduct {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 0rem;
+  margin-bottom: 6rem;
+  background-image: url("../../assets/wallpaperCart.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  width: 100vw;
+}
+
+.findProduct h1 {
+  font-size: 3.5rem;
+  font-family: oswald, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 0rem;
+  color: #ea2194;
+}
+
+.findProduct p {
+  font-size: 2rem;
+  font-family: anton, sans-serif;
+  color: #fed406;
+  text-transform: uppercase;
+  background-color: #1c4da4;
+  letter-spacing: 3px;
+  padding: 1rem 3rem;
+  border: 0px;
+  border-radius: 0px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+          box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.findProduct p:hover {
+  cursor: pointer;
+  color: #1b458f;
+}
+
+.findProduct p:active {
+  cursor: pointer;
+  color: #1b458f;
+  -webkit-box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+          box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+.findProduct p:hover {
+  color: #fed406;
+  background-color: #1b458f;
+}
+
+.findProduct p:active {
+  color: #fed406;
+  background-color: #1b458f;
+  -webkit-box-shadow: rgba(13, 41, 116, 0.815) 3px 3px 6px 0px inset, rgba(6, 31, 112, 0.301) -3px -3px 6px 1px inset;
+          box-shadow: rgba(13, 41, 116, 0.815) 3px 3px 6px 0px inset, rgba(6, 31, 112, 0.301) -3px -3px 6px 1px inset;
+}
+
+.findProduct p a {
+  text-decoration: none;
+  color: #fed406;
+}
+
+.ItemDetailContainerParent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 12rem 4rem 4rem 4rem;
+}
+
+.ItemDetailContainerParent .itemDetailContainer {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 217, 0, 0.5)), to(rgba(219, 32, 141, 0.5)));
+  background: linear-gradient(rgba(255, 217, 0, 0.5), rgba(219, 32, 141, 0.5));
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 5px 5px 8px;
+          box-shadow: rgba(0, 0, 0, 0.15) 5px 5px 8px;
+  width: 100%;
+  padding: 1rem;
+}
+
+.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailImg {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailImg img {
+  height: 50vh;
+  width: auto;
+  margin: 2rem;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 11px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 11px;
+}
+
+.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: auto;
+  width: auto;
+}
+
+.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText h1 {
+  font-size: 3.5rem;
+  font-family: oswald, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 2rem 0rem 2rem 1rem;
+  padding: 1rem 0rem;
+}
+
+.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText h5 {
+  font-size: 1.5rem;
+  font-family: oswald, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 0rem 0rem 0rem 1rem;
+}
+
+.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText p {
+  font-size: 1.9rem;
+  font-family: oswald, sans-serif;
+  font-weight: 300;
+  line-height: 2.5rem;
+  background: rgba(255, 255, 255, 0.322);
+  padding: 1.5rem;
+}
+
+.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 100%;
+  margin: 0rem;
+}
+
+.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .goToCart {
+  font-size: 2rem;
+  font-family: anton, sans-serif;
+  color: #1c4da4;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  letter-spacing: 3px;
+  padding: 0.6rem 4rem;
+  border: 0px;
+  border-radius: 0px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+          box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  text-decoration: none;
+}
+
+.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .goToCart:hover {
+  cursor: pointer;
+  color: #1b458f;
+}
+
+.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .goToCart:active {
+  cursor: pointer;
+  color: #1b458f;
+  -webkit-box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+          box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .itemCountContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .itemCountContainer .itemCountPrice .buyPrice {
+  font-size: 2rem;
+  font-family: anton, sans-serif;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.322);
+  letter-spacing: 3px;
+  padding: 1rem 0rem;
+  text-align: center;
+  width: 150px;
+  margin: 1rem;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+          box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .itemCountContainer .itemCounter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffffff;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+          box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  padding: 0rem;
+  margin: 0rem;
+  width: 150px;
+}
+
+.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .itemCountContainer .itemCounter .buttonAdd {
+  font-size: 3rem;
+  font-family: oswald, sans-serif;
+  padding: 0rem 1.5rem;
+  background-color: #ffffff;
+  color: #1c4da4;
+  border: 0rem;
+  margin: 0rem;
+}
+
+.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .itemCountContainer .itemCounter .buttonAdd:hover {
+  cursor: pointer;
+  color: #1b458f;
+}
+
+.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .itemCountContainer .itemCounter .itemCounter {
+  font-size: 2rem;
+  font-family: oswald, sans-serif;
+  text-align: center;
+  color: #1c4da4;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 0rem 3rem;
+  margin: 0rem;
+}
+
+.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .itemCountContainer .itemCounter .buttonSubtract {
+  font-size: 3rem;
+  font-family: oswald, sans-serif;
+  padding: 0rem 1.5rem;
+  background-color: #ffffff;
+  color: #1c4da4;
+  border: 0rem;
+  margin: 0rem;
+}
+
+.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .itemCountContainer .itemCounter .buttonSubtract:hover {
+  cursor: pointer;
+  color: #1b458f;
+}
+
+.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .itemCountContainer .itemCounterBuy .buyButton {
+  font-size: 2rem;
+  font-family: anton, sans-serif;
+  color: #1c4da4;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  letter-spacing: 3px;
+  padding: 0.6rem 5.7rem;
+  border: 0px;
+  border-radius: 0px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+          box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  margin: 1rem;
+  width: 200px;
+}
+
+.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .itemCountContainer .itemCounterBuy .buyButton:hover {
+  cursor: pointer;
+  color: #1b458f;
+}
+
+.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .itemCountContainer .itemCounterBuy .buyButton:active {
+  cursor: pointer;
+  color: #1b458f;
+  -webkit-box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+          box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailTrailer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50vw;
+}
+
+.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailTrailer iframe {
+  width: 50vw;
+  height: 50vh;
+  margin: 2rem;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 11px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 11px;
+}
+
+/* SMALL */
+@media only screen and (max-width: 500px) {
+  .findProduct {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    background-image: none;
+    height: 40vw;
+  }
+  .findProduct h1 {
+    font-size: 1.5rem;
+    font-family: oswald, sans-serif;
+    letter-spacing: 1px;
+  }
+  .findProduct p {
+    font-size: 1.5rem;
+    font-family: anton, sans-serif;
+    color: #fed406;
+    text-transform: uppercase;
+    background-color: #1c4da4;
+    letter-spacing: 3px;
+    padding: 0.5rem 1rem;
+    border: 0px;
+    border-radius: 0px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+  .findProduct p:hover {
+    cursor: pointer;
+    color: #1b458f;
+  }
+  .findProduct p:active {
+    cursor: pointer;
+    color: #1b458f;
+    -webkit-box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+            box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  }
+  .ItemDetailContainerParent {
+    margin: 3rem 0rem;
+  }
+  .ItemDetailContainerParent .itemDetailContainer {
+    width: 90%;
+  }
+  .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 90%;
+  }
+  .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailImg img {
+    height: 30vh;
+    margin: 2rem;
+  }
+  .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText {
+    margin: 0rem;
+    width: 80vw;
+  }
+  .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText h1 {
+    font-size: 2.5rem;
+    font-family: oswald, sans-serif;
+    letter-spacing: 2px;
+    line-height: 3rem;
+    margin: 0rem 0rem 0rem 1rem;
+    padding: 1rem 0rem;
+  }
+  .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText h5 {
+    font-size: 1.3rem;
+    font-family: oswald, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 0rem 0rem 0rem 1rem;
+  }
+  .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText p {
+    font-size: 1.5rem;
+    font-family: oswald, sans-serif;
+    line-height: 2.5rem;
+    padding: 1rem;
+  }
+  .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .goToCart {
+    font-size: 2rem;
+    font-family: anton, sans-serif;
+    color: #1c4da4;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    letter-spacing: 3px;
+    padding: 0.6rem 4rem;
+    border: 0px;
+    border-radius: 0px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    text-decoration: none;
+  }
+  .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .goToCart:hover {
+    cursor: pointer;
+    color: #1b458f;
+  }
+  .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .goToCart:active {
+    cursor: pointer;
+    color: #1b458f;
+    -webkit-box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+            box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  }
+  .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .itemCountContainer .itemCountPrice .buyPrice {
+    font-size: 1.8rem;
+    letter-spacing: 3px;
+    padding: 1rem 0rem;
+    width: 80px;
+    margin: 1rem;
+  }
+  .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .itemCountContainer .itemCounter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #ffffff;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    padding: 0rem;
+    margin: 0rem;
+    width: 100px;
+  }
+  .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .itemCountContainer .itemCounter .buttonAdd {
+    font-size: 3rem;
+    font-family: oswald, sans-serif;
+    padding: 0rem 1rem;
+  }
+  .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .itemCountContainer .itemCounter .itemCounter {
+    font-size: 1.8rem;
+    font-family: oswald, sans-serif;
+    padding: 0rem 1rem;
+  }
+  .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .itemCountContainer .itemCounter .buttonSubtract {
+    font-size: 3rem;
+    font-family: oswald, sans-serif;
+    padding: 0rem 1rem;
+  }
+  .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .itemCountContainer .itemCounterBuy .buyButton {
+    font-size: 1.8rem;
+    font-family: anton, sans-serif;
+    color: #1c4da4;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    letter-spacing: 3px;
+    padding: 1rem 0rem;
+    border: 0px;
+    border-radius: 0px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    margin: 1rem;
+    width: 80px;
+  }
+  .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .itemCountContainer .itemCounterBuy .buyButton:hover {
+    cursor: pointer;
+    color: #1b458f;
+  }
+  .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .itemCountContainer .itemCounterBuy .buyButton:active {
+    cursor: pointer;
+    color: #1b458f;
+    -webkit-box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+            box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  }
+  .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailTrailer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailTrailer iframe {
+    width: 90%;
+    height: 300px;
+    margin: 2rem;
+  }
+}
+
+/* MEDIUM */
+@media only screen and (min-width: 501px) and (max-width: 810px) {
+  .findProduct {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    background-image: none;
+  }
+  .findProduct h1 {
+    font-size: 2.2rem;
+    font-family: oswald, sans-serif;
+    letter-spacing: 1px;
+  }
+  .findProduct p {
+    font-size: 2rem;
+    font-family: anton, sans-serif;
+    color: #fed406;
+    text-transform: uppercase;
+    background-color: #1c4da4;
+    letter-spacing: 3px;
+    padding: 0.5rem 2rem;
+    border: 0px;
+    border-radius: 0px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+  .findProduct p:hover {
+    cursor: pointer;
+    color: #1b458f;
+  }
+  .findProduct p:active {
+    cursor: pointer;
+    color: #1b458f;
+    -webkit-box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+            box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  }
+  .ItemDetailContainerParent {
+    margin: 2rem 2rem 2rem 2rem;
+  }
+  .ItemDetailContainerParent .itemDetailContainer {
+    width: 90%;
+  }
+  .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 90%;
+  }
+  .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailImg img {
+    margin: 2rem;
+  }
+  .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText h1 {
+    font-size: 3rem;
+    font-family: oswald, sans-serif;
+    letter-spacing: 3px;
+    margin: 0rem 0rem 0rem 1rem;
+    padding: 1rem 0rem;
+  }
+  .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText h5 {
+    font-size: 1.4rem;
+    font-family: oswald, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 0rem 0rem 0rem 1rem;
+  }
+  .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText p {
+    font-size: 1.7rem;
+    font-family: oswald, sans-serif;
+    line-height: 2.5rem;
+    padding: 1rem;
+  }
+  .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailTrailer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailTrailer iframe {
+    width: 90%;
+    margin: 2rem;
+  }
+}
+
+/* BIG LARGE */
+@media only screen and (min-width: 811px) and (max-width: 1100px) {
+  .findProduct {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    background-size: cover;
+    height: 50vh;
+    width: 100vw;
+  }
+  .findProduct h1 {
+    font-size: 2.8rem;
+    font-family: oswald, sans-serif;
+    letter-spacing: 1px;
+  }
+  .findProduct p {
+    font-size: 2rem;
+    font-family: anton, sans-serif;
+    color: #fed406;
+    text-transform: uppercase;
+    background-color: #1c4da4;
+    letter-spacing: 3px;
+    padding: 1rem 2rem;
+    border: 0px;
+    border-radius: 0px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+  .findProduct p:hover {
+    cursor: pointer;
+    color: #1b458f;
+  }
+  .findProduct p:active {
+    cursor: pointer;
+    color: #1b458f;
+    -webkit-box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+            box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  }
+  .ItemDetailContainerParent {
+    margin: 12rem 3rem 3rem 3rem;
+  }
+  .ItemDetailContainerParent .itemDetailContainer {
+    width: 99%;
+  }
+  .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 90%;
+  }
+  .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailImg img {
+    height: 40vh;
+    margin: 2rem;
+  }
+  .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText h1 {
+    font-size: 3rem;
+    font-family: oswald, sans-serif;
+    letter-spacing: 3px;
+    margin: 2rem 0rem 1rem 1rem;
+    padding: 1rem 0rem;
+  }
+  .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText h5 {
+    font-size: 1.4rem;
+    font-family: oswald, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 0rem 0rem 0rem 1rem;
+  }
+  .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText p {
+    font-size: 1.7rem;
+    font-family: oswald, sans-serif;
+    line-height: 2.5rem;
+    padding: 1rem;
+  }
+  .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailTrailer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailTrailer iframe {
+    width: 70vw;
+    margin: 2rem;
+  }
+}
+
+/* EXTRA LARGE */
+@media only screen and (min-width: 1101px) and (max-width: 1500px) {
+  .ItemDetailContainerParent .itemDetailContainer {
+    width: 90%;
+  }
+  .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv {
+    width: 90%;
+  }
+  .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailImg img {
+    margin: 2rem;
+  }
+  .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailTrailer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailTrailer iframe {
+    width: 70vw;
+    margin: 2rem;
+  }
+}
+/*# sourceMappingURL=itemDetail.css.map */
